@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.CharityMarathon", "01.CharityMarathon\01.CharityMarathon.csproj", "{F0FD3224-51B7-4820-B530-1109F1ADEFF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Ladybugs", "02.Ladybugs\02.Ladybugs.csproj", "{3FE1E5EC-9B71-4330-B068-32FA84B887E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.NetherRealms", "03.NetherRealms\03.NetherRealms.csproj", "{F4C83011-84EA-43D9-8459-7B4D6C6F2213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.RoliTheCoder", "04.RoliTheCoder\04.RoliTheCoder.csproj", "{49C50CA4-A0E3-4CE1-9F32-AD670967FD30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0FD3224-51B7-4820-B530-1109F1ADEFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0FD3224-51B7-4820-B530-1109F1ADEFF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0FD3224-51B7-4820-B530-1109F1ADEFF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0FD3224-51B7-4820-B530-1109F1ADEFF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE1E5EC-9B71-4330-B068-32FA84B887E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE1E5EC-9B71-4330-B068-32FA84B887E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE1E5EC-9B71-4330-B068-32FA84B887E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE1E5EC-9B71-4330-B068-32FA84B887E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C83011-84EA-43D9-8459-7B4D6C6F2213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C83011-84EA-43D9-8459-7B4D6C6F2213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C83011-84EA-43D9-8459-7B4D6C6F2213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C83011-84EA-43D9-8459-7B4D6C6F2213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C50CA4-A0E3-4CE1-9F32-AD670967FD30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C50CA4-A0E3-4CE1-9F32-AD670967FD30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C50CA4-A0E3-4CE1-9F32-AD670967FD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C50CA4-A0E3-4CE1-9F32-AD670967FD30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
