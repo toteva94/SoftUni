@@ -1,81 +1,203 @@
-![](data:image/*;base64,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)
+<img src="media/image1.png" width="100" height="91" />My education at
+**Software University**
 
-My education at **Software University**
+![](media/image2.gif)
 
- ![](data:image/*;base64,R0lGODlhWAIKAHcAACH/C01TT0ZGSUNFOS4wDQAAAAFzUkdCAK7OHOkAIf8LTVNPRkZJQ0U5LjAYAAAADG1zT1BNU09GRklDRTkuMALxmbSWACH/C01TT0ZGSUNFOS4wGAAAAAxjbVBQSkNtcDA3MTICAAAEfG0ulAAh+QQBAAAAACwAAAAAWAIKAIHAwMAAZmYBAgMBAgMCgISPqcvtD6OctNqLs968+w+G4kiW5omm6sq27gvH8kzX9o3n+s73/i8KCIfEovGITCqXzKbzCY1Kp9Sq9YrNarfcrvcLDovH5LL5jE6r1+y2+w2Py+f0uv2Oz+v3/L7/DxgoOEhoB3SImKi4yNjo+AgZKTlJWWl5iZmpucnZ6VkAADs=)
-
-This repository contains exercises, exams and projects during my education at Software University (SoftUni), which are grouped by modules.
+This repository contains exercises, exams and projects during my
+education at Software University (SoftUni), which are grouped by
+modules.
 
 **About the Software University**
 
-The [&quot;Software University&quot; (SoftUni)](https://softuni.bg/about)is based on the idea of ​​an innovative and modern educational center that creates real professionals in the programming world.SoftUni offers a complete [software engineering program](https://softuni.bg/curriculum)with the most sought-after software technologies, as well as the most up-to-date teaching practices.
+The ["Software University" (SoftUni)](https://softuni.bg/about) is based
+on the idea of ​​an innovative and modern educational center that
+creates real professionals in the programming world. SoftUni offers a
+complete [software engineering program](https://softuni.bg/curriculum)
+with the most sought-after software technologies, as well as the most
+up-to-date teaching practices.
 
-The syllabus is carefully developed with the direct involvement of [IT companies](https://softuni.bg/partners). It represents a precise selection of programming courses that respond to the most up-to-date trends in the world of information technology and software engineering.
+The syllabus is carefully developed with the direct involvement of [IT
+companies](https://softuni.bg/partners). It represents a precise
+selection of programming courses that respond to the most up-to-date
+trends in the world of information technology and software engineering.
 
-Practical training is combined with a variety of laboratory exercises as well as individual and team-based practical projects through which students acquire both technical and personal skills that they will apply in their future work as specialists.
-
-
+Practical training is combined with a variety of *laboratory exercises*
+as well as *individual* and *team-based practical projects* through
+which students acquire both technical and personal skills that they will
+apply in their future work as specialists.
 
 **Entry Module**
 
-The entry module contains only one course - [Programming Basics](https://softuni.bg/courses/programming-basics).
+The entry module contains only one course - [Programming
+Basics](https://softuni.bg/courses/programming-basics).
 
-     The &quot; **Programming Basics**&quot; course gives the initial programming skills required for all Technology specialties at SoftUni.This includes basic coding skills, work with **integrated development environment** (IDE), use of **variables** and data, **operators** and **expressions** , work with the **console** (reading input and output printing), use of conditional constructions ( **if, if-else, switch-case** ) and loops ( **for, while, do-while, for-each** ).
+The "**Programming Basics**" course gives the initial programming skills
+required for all Technology specialties at SoftUni. This includes basic
+coding skills, work with **integrated development environment** (IDE),
+use of **variables** and data, **operators** and **expressions**, work
+with the **console** (reading input and output printing), use of
+conditional constructions (**if, if-else, switch-case**) and loops
+(**for, while, do-while, for-each**).
 
-The course ends with a **practical entrance exam**. All candidates who managed the exam become students at SoftUni and they continue with their preparation for software engineers.
+The course ends with a **practical entrance exam**. All candidates who
+managed the exam become students at SoftUni and they continue with their
+preparation for software engineers.
 
 **Tech Module**
 
-The &quot;Tech Module&quot; contains two courses – [Programming Fundamentals](https://softuni.bg/trainings/1568/programming-fundamentals-exended-january-2017) and [Software Technologies](https://softuni.bg/trainings/1511/software-technologies-february-2017).
+The “Tech Module” contains two courses – [Programming
+Fundamentals](https://softuni.bg/trainings/1568/programming-fundamentals-exended-january-2017)
+and [Software
+Technologies](https://softuni.bg/trainings/1511/software-technologies-february-2017).
 
-     The &quot; **Programming Fundamentals**&quot; course extends the previously gained basic coding skills from the &quot; [Programming Basics](https://softuni.bg/courses/programming-basics)&quot; course at the Software University and adds additional knowledge and practical programming skills.
+The “**Programming Fundamentals**” course extends the previously gained
+basic coding skills from the “[Programming
+Basics](https://softuni.bg/courses/programming-basics)” course at the
+Software University and adds additional knowledge and practical
+programming skills.
 
-The course covers source control systems,  **Git**  and  **GitHub**  for team collaboration, understanding the basic  **data types**  in programming, extracting pieces of code into  **methods**  with parameters and return value, using the  **debugger**  to trace the program execution and find bugs, processing sequences of elements using  **arrays**  and  **lists** , using  **collections** , working with  **matrices**  for processing tabular data, working with  **dictionaries**  to map keys to values, using  **strings**  for text processing, and the basics of working with  **classes**  and  **objects** , using API classes and defining simple classes.
+The course covers source control systems, **Git** and **GitHub** for
+team collaboration, understanding the basic **data types** in
+programming, extracting pieces of code into **methods** with parameters
+and return value, using the **debugger** to trace the program execution
+and find bugs, processing sequences of elements
+using **arrays** and **lists**, using **collections**, working
+with **matrices** for processing tabular data, working
+with **dictionaries** to map keys to values, using **strings** for text
+processing, and the basics of working with **classes** and **objects**,
+using API classes and defining simple classes.
 
-Along with the programming techniques, the  **algorithmic thinking**  and  **problem solving**  skills are advanced by solving hundreds of practical programming problems. All exercises and exams are automatically evaluated with real-time feedback through the  [SoftUni online judge system](https://judge.softuni.bg/). At the end all students take a  **practical programming exam**.
+Along with the programming techniques, the **algorithmic
+thinking** and **problem solving** skills are advanced by solving
+hundreds of practical programming problems. All exercises and exams are
+automatically evaluated with real-time feedback through the [SoftUni
+online judge system](https://judge.softuni.bg/). At the end all students
+take a **practical programming exam**.
 
-     The &quot; **Software Technologies**&quot; course provides initial knowledge of the most used software technologies in practice and allows students to choose which technologies they like to study.Basic concepts from **front-end** and **back-end** development are studied.The course consists of four parts: **HTML5 development** (HTML + CSS + JavaScript + AJAX + REST), **PHP Web Development** (PHP + MySQL), **C # Web Development** (ASP.NET MVC + Entity Framework + SQL Server), **Java Web Development** (Java + Spring MVC + Hibernate + MySQL).
+The "**Software Technologies**" course provides initial knowledge of the
+most used software technologies in practice and allows students to
+choose which technologies they like to study. Basic concepts from
+**front-end** and **back-end** development are studied. The course
+consists of four parts: **HTML5 development** (HTML + CSS + JavaScript +
+AJAX + REST), **PHP Web Development** (PHP + MySQL), **C \# Web
+Development** (ASP.NET MVC + Entity Framework + SQL Server), **Java Web
+Development** (Java + Spring MVC + Hibernate + MySQL).
 
-The training methodology is extremely practical.The studied material is presented with a few theory, with numerous examples and with a lot of practical tasks with increasing difficulty. Thepractical work in class is done under the supervision of lecturers and assistants is **over 70%**. The course only acquaints the students with the technologies they are learning and gives them a basic skills.The goal is not to learn the technologies, but to get acquainted with them.
+The training methodology is extremely practical. The studied material is
+presented with a few theory, with numerous examples and with a lot of
+practical tasks with increasing difficulty. The practical work in class
+is done under the supervision of lecturers and assistants is **over
+70%**. The course only acquaints the students with the technologies they
+are learning and gives them a basic skills. The goal is not to learn the
+technologies, but to get acquainted with them.
 
+**Professional Module (C\# Web Developer)**
 
+The **“Professional Module”** contains а sub-modules related to the
+chosen profession. My chose was C\# Web Developer so the sub-modules
+are: **C\# Fundamentals**, **C\# DB Fundamentals**, **C\# Web**, **JS
+Core** and **Web Basics**.
 
-**Professional Module** **(C# Web Developer)**
+**C\# Fundamentals** includes [C\#
+Advanced](https://softuni.bg/courses/csharp-advanced), [C\# OOP
+Basics](https://softuni.bg/courses/csharp-oop-basics) and [C\# OOP
+Advanced](https://softuni.bg/courses/csharp-oop-advanced-high-quality-code).
 
-The **&quot;Professional Module&quot;** contains а sub-modulesrelated to the chosen profession. My chose was C# Web Developer so the sub-modules are:   **C# Fundamentals** , **C# DB Fundamentals** , **C# Web** , **JS Core** and **Web Basics**.
+**C\# Advanced** course examines the **.NET platform**, as well as
+working with **C\#** above the startup level. This includes coding
+skills, solving problems of medium-algorithmic character (problem
+solving skills), getting familiar with the standard work tools (**.NET
+Framework**) word processing tools, linear and tree collections, and
+working with files and directories. Particular attention is paid to the
+functional programming paradigm as well as to the basic tool relying on
+it - **LINQ** to process data streams. The course is also deal with
+**asynchronous programming**, and during the training the students are
+divided into teams that have to make a practical project.
 
-**C# Fundamentals** includes [C# Advanced](https://softuni.bg/courses/csharp-advanced), [C# OOP Basics](https://softuni.bg/courses/csharp-oop-basics) and [C# OOP Advanced](https://softuni.bg/courses/csharp-oop-advanced-high-quality-code).
+**C\# OOP Basics** course covers the **Object-Oriented Programming**.
 
+**C\# OOP Advanced** course covers the **High-Quality Code
+description**.
 
-     **C# Advanced** course examines the **.NET platform** , as well as working with **C#** above the startup level.This includes coding skills,solving problems of medium-algorithmic character (problem solving skills), getting familiar with the standard work tools ( **.NET Framework** ) word processing tools, linear and tree collections, and working with files and directories.Particular attention is paid to the functional programming paradigm as well as to the basic tool relying on it - **LINQ** to process data streams.The course is also deal with **asynchronous programming** , and during the training the students are divided into teams that have to make a practical project.
+**C\# DB Fundamentals** includes [Databases Basics – MS SQL
+Server](https://softuni.bg/trainings/1529/databases-advanced-entity-framework-february-2017)
+and [Databases Advanced – Entity
+Framework](https://softuni.bg/trainings/1529/databases-advanced-entity-framework-february-2017).
 
-     **C# OOP Basics** course covers the **Object-Oriented Programming**.
+**Databases Basics - MS SQL Server** introduces the students to one of
+the most widely used database management systems (**DBMS**) used in the
+development of modern information systems - Microsoft SQL Server.The
+course focuses on relational modeling, data modeling with ER diagrams
+(tables and relational links) and SQL operation (data retrieval,
+selection, projection, joins, aggregation, grouping, change, deletion,
+and insertion). Fundamental knowledge about **ACID transactions** and
+transaction processing and practical tips for adjusting productivity are
+provided.
 
-     **C# OOP Advanced** course covers the **High-Quality Code description**.
+**Databases Advanced – Entity Framework** introduces working in details
+with a modern ORM technology: **Entity Framework** (EF), which is a
+standard for **ORM** in **C\#** and **.NET applications**.
 
-**C# DB Fundamentals** includes [Databases Basics – MS SQL Server](https://softuni.bg/trainings/1529/databases-advanced-entity-framework-february-2017) and [Databases Advanced – Entity Framework](https://softuni.bg/trainings/1529/databases-advanced-entity-framework-february-2017).
+**C\# Web includes** [C\# Web Development
+Basics](https://softuni.bg/trainings/1543/csharp-web-development-basics-january-2017)
+and [C\# MVC Frameworks –
+ASP.NET](https://softuni.bg/trainings/1537/csharp-mvc-frameworks-asp-net-march-2017).
 
-     **Databases Basics - MS SQL Server** introduces the students to one of the most widely used database management systems ( **DBMS** ) used in the development of modern information systems - Microsoft SQL Server.The course focuses on relational modeling, data modeling with ER diagrams (tables and relational links)and SQL operation (data retrieval, selection, projection, joins, aggregation, grouping, change, deletion, and insertion).Fundamental knowledge about **ACID transactions** and transaction processing and practical tips for adjusting productivity are provided.
+**C\# Web Development Basics** course introduces the students to basic
+**web development principles** such as **HTTP** protocol, **sessions**,
+**caching** of data, the various data protocols, security. The students
+write their own MVC framework based on C \# and MS SQL Server, with the
+separation of models, views and controllers, front-controller and
+router, support all the basic functionalities needed for a modern web
+application: data visualization, tables, CRUD data operations, forms,
+paging, validation, notifications, users, sessions, login / logout, and
+more.
 
-       **Databases Advanced – Entity Framework** introduces working in details with a modern ORM technology: **Entity Framework** (EF), which is a standard for **ORM** in **C#** and **.NET applications**.
+**C\# MVC Frameworks – ASP.NET** course introduces the students
+to **practical development of ASP.NET MVC based Web applications** with
+databases, SQL Server, Entity Framework, ASP.NET MVC, the
+Model-View-Controller pattern, AJAX and SignalR. The course also covers
+some advanced topics, such as Web application security, caching and UI
+controls.
 
-**C# Web includes** [C# Web Development Basics](https://softuni.bg/trainings/1543/csharp-web-development-basics-january-2017) and [C# MVC Frameworks – ASP.NET](https://softuni.bg/trainings/1537/csharp-mvc-frameworks-asp-net-march-2017).
+**JS Core** includes [JavaScript
+Fundamentals](https://softuni.bg/trainings/1649/js-fundamentals-may-2017),
+[JavaScript
+Advanced](https://softuni.bg/trainings/1650/js-advanced-july-2017) and
+[JavaScript
+Applications](https://softuni.bg/trainings/1651/js-applications-july-2017).
 
- **    C# Web Development Basics** course introduces the students to basic **web development principles** such as **HTTP** protocol, **sessions** , **caching** of data, the various data protocols, security.The students write their own MVC framework based on C # and MS SQL Server,with the separation of models, views and controllers, front-controller and router, support all the basic functionalities needed for a modern web application: data visualization, tables, CRUD data operations, forms, paging, validation, notifications, users, sessions, login / logout, and more.
+The **JavaScript Fundamentals** course builds basic programming skills
+with JavaScript. JavaScript constructs for building a programming logic,
+data types, operators, expressions, conditional constructs, loops, and
+function handling are studied. Covers the work with arrays, strings and
+regular expressions, use of objects, associative arrays, and multitudes.
+The course is based on state-of-the-art standards and JS technologies
+(studied ES2017).
 
-       **C# MVC Frameworks – ASP.NET** course introduces the students to  **practical development of ASP.NET MVC based Web applications**  with databases, SQL Server, Entity Framework, ASP.NET MVC, the Model-View-Controller pattern, AJAX and SignalR. The course also covers some advanced topics, such as Web application security, caching and UI controls.
+**JavaScript Advanced** includes working with object DOM and events,
+using the jQuery library, defining JS classes, inheritance and prototype
+chains, work with IIFE and closures, using Modules and Transplants, unit
+testing.
 
-**JS Core** includes [JavaScript Fundamentals](https://softuni.bg/trainings/1649/js-fundamentals-may-2017), [JavaScript Advanced](https://softuni.bg/trainings/1650/js-advanced-july-2017) and [JavaScript Applications](https://softuni.bg/trainings/1651/js-applications-july-2017).
+**JavaScript Applications** includes applications working with AJAX and
+jQuery AJAX, asynchronous programming, working with REST API, templating
+& routing, the creation of SPA applications, build process, ESLint and
+other JS tools.
 
-     The **JavaScript Fundamentals** course builds basic programming skills with JavaScript.JavaScript constructs for building a programming logic, data types, operators, expressions, conditional constructs, loops, and function handling are studied. Covers the work with arrays, strings and regular expressions, use of objects, associative arrays, and multitudes. The course is based on state-of-the-art standards and JS technologies (studied ES2017).
+**Web Basics** includes [Web Fundamentals –
+HTML5](https://softuni.bg/trainings/1645/web-fundamentals-html5-may-2017)
+and [WordPress
+Basics](https://softuni.bg/trainings/1647/wordpress-basics-july-2017).
 
-     **JavaScript Advanced** includes working with object DOM and events, using the jQuery library, defining JS classes, inheritance and prototype chains, work with IIFE and closures, using Modules and Transplants, unit testing.
+**Web Fundamentals – HTML5** includes techniques used to design pages
+that are comfortable for viewing on a computer or mobile device, ability
+to create static web pages, full knowledge of the basics of web design
+and building web pages, working with HTML and CSS, creation of modern
+web sites, creation of responsive design.
 
-     **JavaScript Applications** includes applications working with AJAX and jQuery AJAX,asynchronous programming, working with REST API, templating &amp; routing, the creation of SPA applications, build process, ESLint and other JS tools.
-
-**Web Basics** includes [Web Fundamentals – HTML5](https://softuni.bg/trainings/1645/web-fundamentals-html5-may-2017) and [WordPress Basics](https://softuni.bg/trainings/1647/wordpress-basics-july-2017).
-
-      **Web Fundamentals – HTML5** includes techniques used to design pages that are comfortable for viewing on a computer or mobile device, ability to create static web pages, full knowledge of the basics of web design and building web pages, working with HTML and CSS, creation of modern web sites, creation of responsive design.
-
-     **WordPress Basics** includes creation of complete WordPress sites, creation and editing web content, working with web hosting, domains and cPanel, WordPress installation and setup, Installation and setup of topics and add-ons,
+**WordPress Basics** includes creation of complete WordPress sites,
+creation and editing web content, working with web hosting, domains and
+cPanel, WordPress installation and setup, Installation and setup of
+topics and add-ons,  
 creation and changing own WP themes.
