@@ -1,10 +1,9 @@
- My education at the
 **Software University**
 
 
 
 This repository contains exercises, exams and projects during my
-education at Software University (SoftUni), which are grouped by
+education at the Software University (SoftUni), which are grouped by
 modules.
 
 **About the Software University**
