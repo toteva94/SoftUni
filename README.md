@@ -1,7 +1,7 @@
-<img src="media/image1.png" width="100" height="91" />My education at
+ />My education at
 **Software University**
 
-![](media/image2.gif)
+
 
 This repository contains exercises, exams and projects during my
 education at Software University (SoftUni), which are grouped by
