@@ -4,7 +4,7 @@
 
 This repository contains exercises, exams and projects during my
 education at the Software University (SoftUni), which are grouped by
-modules.
+modules. [![Build Status](https://travis-ci.org/{toteva94}/{SoftUni}.png?branch=master)](https://travis-ci.org/{toteva94}/{SoftUni})
 
 **About the Software University**
 
