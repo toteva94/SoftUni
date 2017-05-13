@@ -1,4 +1,4 @@
- />My education at
+ My education at the
 **Software University**
 
 
