@@ -84,7 +84,7 @@ Development** (ASP.NET MVC + Entity Framework + SQL Server), **Java Web
 Development** (Java + Spring MVC + Hibernate + MySQL).
 
 The training methodology is extremely practical. The studied material is
-presented with a few theory, with numerous examples and with a lot of
+presented with few theory, with numerous examples and with a lot of
 practical tasks with increasing difficulty. The practical work in class
 is done under the supervision of lecturers and assistants is **over
 70%**. The course only acquaints the students with the technologies they
@@ -93,7 +93,7 @@ technologies, but to get acquainted with them.
 
 **Professional Module (C\# Web Developer)**
 
-The **“Professional Module”** contains а sub-modules related to the
+The **“Professional Module”** contains sub-modules related to the
 chosen profession. My chose was C\# Web Developer so the sub-modules
 are: **C\# Fundamentals**, **C\# DB Fundamentals**, **C\# Web**, **JS
 Core** and **Web Basics**.
@@ -110,7 +110,7 @@ solving skills), getting familiar with the standard work tools (**.NET
 Framework**) word processing tools, linear and tree collections, and
 working with files and directories. Particular attention is paid to the
 functional programming paradigm as well as to the basic tool relying on
-it - **LINQ** to process data streams. The course is also deal with
+it - **LINQ** to process data streams. The course is also dealing with
 **asynchronous programming**, and during the training the students are
 divided into teams that have to make a practical project.
 
